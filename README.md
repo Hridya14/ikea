@@ -1,12 +1,12 @@
-<p align="center">
+<img width="1920" height="1020" alt="Screenshot 2026-02-14 060545" src="https://github.com/user-attachments/assets/c4f25d32-2efb-435b-8860-10b0538fa165" /><img width="1920" height="1020" alt="Screenshot 2026-02-14 060545" src="https://github.com/user-attachments/assets/c2e9872e-72ff-40d1-a903-49bb0ccf6e8f" /><p align="center">
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [ZEROWASTE CONNECT] 🎯
+# ZEROWASTE CONNECT 🎯
 
 ## Basic Details
 
-### Team Name: [IKEA]
+### Team Name: IKEA
 
 ### Team Members
 - Member 1: [HRIDYA SASHEENDRAN P V] - [GOVERNMENT ENGINEERING COLLEGE KOZHIKODE]
@@ -20,13 +20,17 @@ https://hridya14.github.io/ikea/
 
 
 ### Project Description
-[2-3 lines about what your project does]
+Food listings may remain active even after becoming unsafe Recipients may not know the ingredients (risking allergies). Automatically remove expired food listings from the website
+ Display only safe and available food
+ Include a rating system for donors and receivers
+ Enable quick claiming and pickup
+
 
 ### The Problem statement
-[A significant amount of edible food is wasted daily by restaurants, event organizers, and households due to the absence of a structured and real-time redistribution system. At the same time, many individuals and communities face food insecurity. Currently, there is no comprehensive digital platform where donors can log in and update detailed information about surplus food, such as the name of the food item, quantity available, ingredients used, pickup time, and expiry time. Existing systems also lack automatic expiry management, removal of outdated listings, and a rating mechanism to ensure trust and accountability. As a result: Food listings may remain active even after becoming unsafe Recipients may not know the ingredients (risking allergies).]
+A significant amount of edible food is wasted daily by restaurants, event organizers, and households due to the absence of a structured and real-time redistribution system. At the same time, many individuals and communities face food insecurity. Currently, there is no comprehensive digital platform where donors can log in and update detailed information about surplus food, such as the name of the food item, quantity available, ingredients used, pickup time, and expiry time. Existing systems also lack automatic expiry management, removal of outdated listings, and a rating mechanism to ensure trust and accountability. As a result: Food listings may remain active even after becoming unsafe Recipients may not know the ingredients (risking allergies).
 
 ### The Solution
-[We propose developing a web-based platform where restaurants, event organizers, and households can:
+We propose developing a web-based platform where restaurants, event organizers, and households can:
 
 Log in and post leftover food details
 
@@ -43,7 +47,7 @@ The system will:
 ✔ Include a rating system for donors and receivers
 ✔ Enable quick claiming and pickup
 
-This ensures safe, transparent, and efficient redistribution of surplus food while reducing waste and supporting communities in need.create an front end code which include all of this features]
+This ensures safe, transparent, and efficient redistribution of surplus food while reducing waste and supporting communities in need.create an front end code which include all of this features
 
 ---
 
@@ -67,10 +71,11 @@ This ensures safe, transparent, and efficient redistribution of surplus food whi
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: Automatically remove expired food listings from the website
+- Feature 2:  Display only safe and available food
+- Feature 3: Include a rating system for donors and receivers
+- Feature 4:  Enable quick claiming and pickup
+
 
 ---
 
@@ -105,13 +110,18 @@ List the key features of your project:
 #### Screenshots (Add at least 3)
 
 ![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="1920" height="1020" alt="Screenshot 2026-02-14 060545" src="https://github.com/user-attachments/assets/70083582-b343-4aa1-a946-b748ab11b3ca" />
+
+
+
 
 ![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="1920" height="1020" alt="Screenshot 2026-02-14 060618" src="https://github.com/user-attachments/assets/843f7df5-c80b-40ee-a018-f21fbe815ce1" />
+
 
 ![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="1920" height="1020" alt="Screenshot 2026-02-14 060635" src="https://github.com/user-attachments/assets/99bcaeae-03cf-4b75-ba6c-2be9cc970efc" />
+
 
 #### Diagrams
 
