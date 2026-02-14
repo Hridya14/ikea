@@ -15,6 +15,8 @@
 ### Hosted Project Link
 source code:
 https://github.com/Hridya14/ikea.git
+live server:
+https://hridya14.github.io/ikea/
 
 
 ### Project Description
