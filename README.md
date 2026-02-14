@@ -1,5 +1,5 @@
-<img width="1920" height="1020" alt="Screenshot 2026-02-14 060545" src="https://github.com/user-attachments/assets/c4f25d32-2efb-435b-8860-10b0538fa165" /><img width="1920" height="1020" alt="Screenshot 2026-02-14 060545" src="https://github.com/user-attachments/assets/c2e9872e-72ff-40d1-a903-49bb0ccf6e8f" /><p align="center">
-  <img src="./img.png" alt="Project Banner" width="100%">
+![Uploading image.png…]()
+
 </p>
 
 # ZEROWASTE CONNECT 🎯
