@@ -13,7 +13,9 @@
 - Member 2: [BEEGUM FIZA S S] - [GOVERNMENT ENGINEERING COLLEGE KOZHIKODE]
 
 ### Hosted Project Link
-[]
+source code:
+https://github.com/Hridya14/ikea.git
+
 
 ### Project Description
 [2-3 lines about what your project does]
