@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZeroWaste Connect</title>
+    <style>
+        body { margin:0; font-family: Arial, sans-serif; background:#f4f6f8; }
+
+        header {
+            background:#2e7d32;
+            color:white;
+            padding:15px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        header h1 { margin:0; }
+
+        nav button {
+            background:white;
+            color:#2e7d32;
+            border:none;
+            padding:8px 15px;
+            margin-left:10px;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+        nav button:hover {
+            background:#c8e6c9;
+        }
+
+        .hidden { display:none; }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://images.unsplash.com/photo-1546069901-eacef0df6022');
+            background-size:cover;
+            background-position:center;
+            color:white;
+            text-align:center;
+            padding:100px 20px;
+        }
+
+        .hero h2 {
+            font-size:40px;
+            margin-bottom:20px;
+        }
+
+        .hero p {
+            font-size:18px;
+            margin-bottom:30px;
+        }
+
+        .hero button {
+            padding:12px 25px;
+            font-size:16px;
+            border:none;
+            border-radius:6px;
+            cursor:pointer;
+            background:#ff9800;
+            color:white;
+        }
+
+        .hero button:hover {
+            background:#f57c00;
+        }
+
+        /* FEATURES */
+        .features {
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            padding:50px 20px;
+            flex-wrap:wrap;
+        }
+
+        .feature-card {
+            background:white;
+            width:250px;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px #ccc;
+            text-align:center;
+            transition:0.3s;
+        }
+
+        .feature-card:hover {
+            transform:scale(1.05);
+        }
+
+        .container {
+            width:80%;
+            margin:30px auto;
+        }
+
+        input, textarea, button {
+            width:100%;
+            padding:10px;
+            margin:8px 0;
+        }
+
+        button {
+            background:#2e7d32;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        button:hover {
+            background:#1b5e20;
+        }
+
+        label {
+            font-weight:bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ZeroWaste Connect</h1>
+    <nav>
+        <button onclick="showHome()">Home</button>
+        <button onclick="showRegister()">Register</button>
+        <button onclick="showLogin()">Login</button>
+    </nav>
+</header>
+
+<!-- HOMEPAGE -->
+<div id="homeSection">
+
+    <div class="hero">
+        <h2>Save Food. Serve People.</h2>
+        <p>Connecting surplus food to those in need responsibly.</p>
+        <button onclick="showRegister()">Start Donating</button>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <h3>🍱 Donate Food</h3>
+            <p>Post your leftover food easily and safely.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🤝 Reduce Waste</h3>
+            <p>Help reduce food waste and support communities.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🌍 Build Impact</h3>
+            <p>Create a sustainable and responsible ecosystem.</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- REGISTER -->
+<div id="registerSection" class="hidden container">
+    <h2>Donor Registration</h2>
+
+    <label>Name:</label>
+    <input type="text" id="regName" placeholder="Enter Name">
+
+    <label>Password:</label>
+    <input type="password" id="regPass" placeholder="Enter Password">
+
+    <button onclick="register()">Register</button>
+</div>
+
+<!-- LOGIN -->
+<div id="loginSection" class="hidden container">
+    <h2>Donor Login</h2>
+
+    <label>Name:</label>
+    <input type="text" id="loginName" placeholder="Enter Name">
+
+    <label>Password:</label>
+    <input type="password" id="loginPass" placeholder="Enter Password">
+
+    <button onclick="login()">Login</button>
+</div>
+
+<!-- ADD FOOD -->
+<div id="foodFormSection" class="hidden container">
+    <h2>Add Leftover Food</h2>
+
+    <label>Food Name:</label>
+    <input type="text" id="foodName">
+
+    <label>Quantity:</label>
+    <input type="number" id="quantity">
+
+    <label>Ingredients:</label>
+    <textarea id="ingredients"></textarea>
+
+    <label>Pickup Location:</label>
+    <input type="text" id="location">
+
+    <label>Time of Expiry:</label>
+    <input type="datetime-local" id="expiryTime">
+
+    <button onclick="addFood()">Post Food</button>
+</div>
+
+<script>
+
+let currentUser = null;
+
+function hideAll(){
+    document.getElementById("homeSection").classList.add("hidden");
+    document.getElementById("registerSection").classList.add("hidden");
+    document.getElementById("loginSection").classList.add("hidden");
+    document.getElementById("foodFormSection").classList.add("hidden");
+}
+
+function showHome(){
+    hideAll();
+    document.getElementById("homeSection").classList.remove("hidden");
+}
+
+function showRegister(){
+    hideAll();
+    document.getElementById("registerSection").classList.remove("hidden");
+}
+
+function showLogin(){
+    hideAll();
+    document.getElementById("loginSection").classList.remove("hidden");
+}
+
+function register(){
+    const name = document.getElementById("regName").value;
+    const pass = document.getElementById("regPass").value;
+
+    if(localStorage.getItem(name)){
+        alert("User already exists!");
+        return;
+    }
+
+    localStorage.setItem(name, pass);
+    alert("Registered Successfully!");
+    showLogin();
+}
+
+function login(){
+    const name = document.getElementById("loginName").value;
+    const pass = document.getElementById("loginPass").value;
+
+    if(localStorage.getItem(name) === pass){
+        currentUser = name;
+        alert("Login Successful!");
+        hideAll();
+        document.getElementById("foodFormSection").classList.remove("hidden");
+    } else {
+        alert("Invalid Credentials!");
+    }
+}
+
+// function addFood(){
+
+//     alert("Food Posted Successfully!");
+//     sowHome();
+// }
+async function addFood(){
+
+    const foodName = document.getElementById("foodName").value;
+    const quantity = document.getElementById("quantity").value;
+    const ingredients = document.getElementById("ingredients").value;
+    const location = document.getElementById("location").value;
+    const expiryTime = document.getElementById("expiryTime").value;
+
+    const response = await fetch("http://127.0.0.1:8000/addfood", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            food_name: foodName,
+            quantity: quantity,
+            ingredients: ingredients,
+            location: location,
+            expiry_time: expiryTime,
+            donor_name: currentUser
+        })
+    });
+
+    const data = await response.json();
+
+    alert(data.message);
+    showHome();
+}
+showHome();
+
+</script>
+
+</body>
+</html>
