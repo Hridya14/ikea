@@ -64,7 +64,6 @@ This ensures safe, transparent, and efficient redistribution of surplus food whi
 
 ## Features
 
-List the key features of your project:
 - Feature 1: Automatically remove expired food listings from the website
 - Feature 2:  Display only safe and available food
 - Feature 3: Include a rating system for donors and receivers
@@ -75,7 +74,6 @@ List the key features of your project:
 
 ## Implementation
 
-### For Software:
 
 #### Installation
 ```bash
@@ -87,13 +85,7 @@ List the key features of your project:
 [Run commands - e.g., npm start, python app.py]
 ```
 
-### For Hardware:
 
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
 
 ---
 
@@ -103,13 +95,9 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
+
 <img width="1920" height="1020" alt="Screenshot 2026-02-14 060545" src="https://github.com/user-attachments/assets/70083582-b343-4aa1-a946-b748ab11b3ca" />
 
-
-
-
-![Screenshot2](Add screenshot 2 here with proper name)
 <img width="1920" height="1020" alt="Screenshot 2026-02-14 060618" src="https://github.com/user-attachments/assets/843f7df5-c80b-40ee-a018-f21fbe815ce1" />
 
 
@@ -122,12 +110,12 @@ List the key features of your project:
 **System Architecture:**
 
 ![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+
 
 **Application Workflow:**
 
 ![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
+
 
 ---
 
@@ -135,11 +123,7 @@ List the key features of your project:
 
 #### Schematic & Circuit
 
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
 #### Build Photos
 
